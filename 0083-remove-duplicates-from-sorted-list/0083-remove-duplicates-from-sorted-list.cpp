@@ -32,14 +32,14 @@ if(head==NULL)
 return head;
 while(headtwo!=NULL)
 {
-if(head->val != headtwo->val)
-{
-head->next = headtwo;
-head = head->next;
-}
-headtwo = headtwo->next;
-}
-head->next = NULL;
-return ans;
-}
+    if(head->val != headtwo->val)
+    {
+        head->next = headtwo;
+        head = head->next;
+    }
+    headtwo = headtwo->next;
+    }
+    head->next = NULL;
+    return ans;
+    }
 };
