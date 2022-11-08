@@ -4,13 +4,14 @@ public:
         int count=0;
         int max_count = INT_MIN;
         for(auto x:nums){
-            if(x==0)
+            if(x==1)
             {
-                max_count = max(max_count,count);
-                count=0;
+               
+                 count++;
             }
             else{
-                count++;
+                max_count = max(max_count,count);
+                count=0;
             }
         }
         return  max(max_count,count);
