@@ -2,8 +2,7 @@ class Solution {
 public:
     bool isPalindrome(int x) {
     int n=x;
-    if(x<0)
-        return false;
+    if(x<0) return false;
     long long reverse=0;
     while(x>0)
     {
@@ -11,8 +10,7 @@ public:
         reverse=reverse*10+remainder;
         x=x/=10;
      }
-    if(reverse==n)
-        return true;
+    if(reverse==n) return true;
     return false;
     
     }
