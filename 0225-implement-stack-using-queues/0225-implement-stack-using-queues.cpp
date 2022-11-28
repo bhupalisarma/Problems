@@ -1,37 +1,9 @@
-// class MyStack {
-// public:
-//     MyStack() {
-        
-//     }
-    
-//     void push(int x) {
-        
-//     }
-    
-//     int pop() {
-        
-//     }
-    
-//     int top() {
-        
-//     }
-    
-//     bool empty() {
-        
-//     }
-// };
-
-
-
 class MyStack {
 public:
     /** Initialize your data structure here. */
     queue<int> q1;
     queue<int> q2;
-    MyStack() {
-        
-    }
-    
+
     /** Push element x onto stack. */
     void push(int x) {
         q2.push(x);
