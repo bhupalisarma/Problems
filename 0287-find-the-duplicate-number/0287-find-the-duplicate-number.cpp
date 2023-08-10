@@ -25,14 +25,14 @@ public:
         int n = v.size();
         int ans = 0;
         
-        unordered_map<int,int>cnt;
+        unordered_map<int,int>mp;
         
         for(int i=0;i<n;i++){
-            cnt[v[i]]++;
+            mp[v[i]]++;
         }
         
-        for(int i=0;i<n+5;i++){
-            if(cnt[i]>1){
+        for(int i=0;i<n+1;i++){
+            if(mp[i]>1){
                 ans=i;
             }
         }
