@@ -23,8 +23,11 @@ class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
         
-        set<int>s1,s2;
+        //union vector
         vector<int>output;
+        
+        // put the values in set to remove duplicate
+        set<int>s1,s2;
         
         for(auto it: nums1){
             s1.insert(it);
@@ -33,8 +36,10 @@ public:
             s2.insert(it);
         }
         
+        //find if we can get the value from first set in second set
         for(auto it : s1){
             if(s2.find(it) != s2.end()){
+                //if found push it into output vector
                 output.push_back(it);
             }
         }
